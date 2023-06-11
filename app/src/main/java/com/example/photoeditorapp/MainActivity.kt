@@ -32,7 +32,7 @@ class MainActivity : AppCompatActivity() {
                 var filePath: Uri? = data.data
                 val dsPhotoEditorIntent = Intent(this, DsPhotoEditorActivity::class.java)
                 dsPhotoEditorIntent.data = filePath
-                dsPhotoEditorIntent.putExtra(DsPhotoEditorConstants.DS_PHOTO_EDITOR_OUTPUT_DIRECTORY, "YOUR_OUTPUT_IMAGE_FOLDER")
+                dsPhotoEditorIntent.putExtra(DsPhotoEditorConstants.DS_PHOTO_EDITOR_OUTPUT_DIRECTORY, "folder")
 
                 val toolsToHide = intArrayOf(DsPhotoEditorActivity.TOOL_ORIENTATION, DsPhotoEditorActivity.TOOL_CROP)
                 dsPhotoEditorIntent.putExtra(DsPhotoEditorConstants.DS_PHOTO_EDITOR_TOOLS_TO_HIDE, toolsToHide)
